@@ -4,7 +4,7 @@ This repository contains the firmware developed for the **Board Bring-up and Val
 
 ## 🚀 Project Scope
 
-The core objective was to perform a complete *bring-up* of a pre-existing PCB design. My responsibilities included:
+The core objective was to perform a complete *bring-up* of a pre-existing PCB design. The goals included:
 1. **Soldering & Assembly:** Manual installation of all discrete and integrated components on the PCB.
 2. **Hardware Validation:** Continuity testing, power rail verification, and peripheral functional testing.
 3. **Firmware Development:** Implementation of low-level drivers and application logic in C.
@@ -22,7 +22,7 @@ The firmware manages a monitoring system with a complete Human-Machine Interface
 
 - **Event-Driven Architecture:** Uses a **Finite State Machine (FSM)** to manage UI screens and alarm conditions efficiently.
 - **Real-Time Clock:** Integrated with the DS1307 RTC via I2C for accurate date and time management.
-- **Custom Peripheral Drivers:** Hand-coded drivers for:
+- **Custom Peripheral Drivers:** drivers for:
   - **LCD:** Custom character support and optimized positioning.
   - **Keypad:** Matrix scanning with software-based debouncing.
   - **ADC:** Real-time sensor reading and data processing.
@@ -37,5 +37,3 @@ The firmware manages a monitoring system with a complete Human-Machine Interface
 - `lcd.c/h` & `keypad.c/h`: User interface and input management.
 - `adc.c/h` & `pwm.c/h`: Analog signal processing and power control.
 
----
-Developed by **Maria Clara Rodrigues Ribeiro** Computer Engineering Student at UNIFEI.
